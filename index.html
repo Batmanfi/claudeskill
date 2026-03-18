@@ -32,7 +32,6 @@
     line-height: 1.6;
   }
 
-  /* NAV */
   nav {
     position: sticky; top: 0; z-index: 100;
     padding: 0 48px; height: 60px;
@@ -49,10 +48,8 @@
   }
   .nav-cta:hover { background: var(--blue-dark); }
 
-  /* WRAPPER */
   .page { max-width: 860px; margin: 0 auto; padding: 72px 48px 100px; }
 
-  /* CALLOUT (purple bg → use lime border in their style) */
   .callout {
     border: 1.5px solid var(--blue);
     border-radius: 10px;
@@ -67,7 +64,6 @@
   .callout li { margin-bottom: 4px; }
   .callout a { color: var(--blue); }
 
-  /* TIP CALLOUT */
   .tip {
     background: var(--card);
     border-left: 3px solid var(--blue);
@@ -78,10 +74,8 @@
     margin-bottom: 40px;
   }
 
-  /* HR */
   hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 
-  /* HEADINGS */
   h1 {
     font-family: 'Faculty Glyphic', serif;
     font-size: clamp(36px, 5vw, 64px);
@@ -112,27 +106,11 @@
   ul, ol { padding-left: 22px; margin-bottom: 14px; }
   li { color: var(--muted); font-size: 15px; font-weight: 300; margin-bottom: 6px; line-height: 1.65; }
   li strong { color: var(--black); font-weight: 500; }
-  li em { font-style: italic; }
 
-  /* TABLE */
   table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
   th, td { text-align: left; padding: 12px 16px; border: 1px solid var(--border); color: var(--muted); font-weight: 300; }
   th { background: var(--surface); font-weight: 500; color: var(--black); }
   td strong { color: var(--black); font-weight: 500; }
-
-  /* BLOCKQUOTE */
-  blockquote {
-    border-left: 3px solid var(--blue);
-    margin: 16px 0;
-    padding: 10px 18px;
-    background: var(--card);
-    border-radius: 0 6px 6px 0;
-    font-size: 14px;
-    color: var(--muted);
-    font-style: italic;
-  }
-  blockquote em { font-style: normal; }
-  blockquote strong { color: var(--black); font-weight: 500; font-style: normal; }
 
   /* PROMPT BLOCK */
   .prompt-wrap { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 24px; }
@@ -161,7 +139,6 @@
     margin: 0; scrollbar-width: thin; scrollbar-color: var(--border) transparent;
   }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 28px 48px;
@@ -203,46 +180,6 @@
     <br>
     book a call at <a href="https://theinfostudio.io" target="_blank">theinfostudio.io</a>
   </div>
-
-  <hr>
-
-  <h2>📋 Skill Overview</h2>
-
-  <table>
-    <tr><th>Field</th><th>Details</th></tr>
-    <tr><td><strong>Skill Name</strong></td><td>b2b-landing-copy</td></tr>
-    <tr><td><strong>Version</strong></td><td>1.0</td></tr>
-    <tr><td><strong>Trigger</strong></td><td>Use when writing or improving B2B landing pages, sales pages, VSL pages, or any conversion-focused copy</td></tr>
-  </table>
-
-  <p><strong>When to use this skill:</strong><br>
-  Use this skill to write high-converting B2B landing page copy. Trigger whenever a user wants to create, write, or improve a sales page, landing page, VSL page, or any conversion-focused copy for a B2B offer. Also trigger when the user says "write copy for my offer", "sales page copy", "landing page for my service", or provides a VSL, sales deck, or offer doc and asks for copy. Use even if they don't say "landing page" explicitly — if they have a B2B offer and want copy that converts, this skill applies.</p>
-
-  <hr>
-
-  <h2>🛠️ How to Add This Skill to Claude</h2>
-
-  <h3>Option A — Add as a Custom Instruction <em style="font-size:13px;color:var(--muted2);font-style:normal;">(Recommended for individuals)</em></h3>
-  <ol>
-    <li>Go to <a href="https://claude.ai" style="color:var(--blue);">claude.ai</a> and open <strong>Settings</strong></li>
-    <li>Click <strong>"Custom Instructions"</strong> (or "Profile &amp; Instructions")</li>
-    <li>In the <strong>"What would you like Claude to know?"</strong> or system prompt field, paste the full system prompt below</li>
-    <li>Click <strong>Save</strong></li>
-  </ol>
-  <p>Claude will now apply this skill automatically whenever relevant.</p>
-
-  <h3>Option B — Use as a Project System Prompt <em style="font-size:13px;color:var(--muted2);font-style:normal;">(Recommended for teams)</em></h3>
-  <ol>
-    <li>Go to <a href="https://claude.ai" style="color:var(--blue);">claude.ai</a> and click <strong>"Projects"</strong> in the sidebar</li>
-    <li>Create a new project or open an existing one</li>
-    <li>Click <strong>"Set instructions"</strong> or <strong>"Edit project instructions"</strong></li>
-    <li>Paste the full system prompt below into the instructions field</li>
-    <li>Click <strong>Save</strong></li>
-  </ol>
-  <p>Everyone in the project will now have access to this skill.</p>
-
-  <h3>Option C — Paste at the Start of Any Conversation</h3>
-  <p>Copy the system prompt below and paste it at the beginning of a new Claude conversation before making your request. No setup required.</p>
 
   <hr>
 
@@ -499,6 +436,46 @@ Example frameworks:
 - Never pad. If a section doesn't have enough source material, say so rather than filling it with generics
 - Give the result in a markdown (.md) file. Do not design the page — we only want the copy.</pre>
   </div>
+
+  <hr>
+
+  <h2>📋 Skill Overview</h2>
+
+  <table>
+    <tr><th>Field</th><th>Details</th></tr>
+    <tr><td><strong>Skill Name</strong></td><td>b2b-landing-copy</td></tr>
+    <tr><td><strong>Version</strong></td><td>1.0</td></tr>
+    <tr><td><strong>Trigger</strong></td><td>Use when writing or improving B2B landing pages, sales pages, VSL pages, or any conversion-focused copy</td></tr>
+  </table>
+
+  <p><strong>When to use this skill:</strong><br>
+  Use this skill to write high-converting B2B landing page copy. Trigger whenever a user wants to create, write, or improve a sales page, landing page, VSL page, or any conversion-focused copy for a B2B offer. Also trigger when the user says "write copy for my offer", "sales page copy", "landing page for my service", or provides a VSL, sales deck, or offer doc and asks for copy. Use even if they don't say "landing page" explicitly — if they have a B2B offer and want copy that converts, this skill applies.</p>
+
+  <hr>
+
+  <h2>🛠️ How to Add This Skill to Claude</h2>
+
+  <h3>Option A — Add as a Custom Instruction <em style="font-size:13px;color:var(--muted2);font-style:normal;">(Recommended for individuals)</em></h3>
+  <ol>
+    <li>Go to <a href="https://claude.ai" style="color:var(--blue);">claude.ai</a> and open <strong>Settings</strong></li>
+    <li>Click <strong>"Custom Instructions"</strong> (or "Profile &amp; Instructions")</li>
+    <li>In the <strong>"What would you like Claude to know?"</strong> or system prompt field, paste the full system prompt above</li>
+    <li>Click <strong>Save</strong></li>
+  </ol>
+  <p>Claude will now apply this skill automatically whenever relevant.</p>
+
+  <h3>Option B — Use as a Project System Prompt <em style="font-size:13px;color:var(--muted2);font-style:normal;">(Recommended for teams)</em></h3>
+  <ol>
+    <li>Go to <a href="https://claude.ai" style="color:var(--blue);">claude.ai</a> and click <strong>"Projects"</strong> in the sidebar</li>
+    <li>Create a new project or open an existing one</li>
+    <li>Click <strong>"Set instructions"</strong> or <strong>"Edit project instructions"</strong></li>
+    <li>Paste the full system prompt above into the instructions field</li>
+    <li>Click <strong>Save</strong></li>
+  </ol>
+  <p>Everyone in the project will now have access to this skill.</p>
+
+  <h3>Option C — Paste at the Start of Any Conversation</h3>
+  <p>Copy the system prompt above and paste it at the beginning of a new Claude conversation before making your request. No setup required.</p>
 
 </div>
 
